@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/comida.png" type="image/x-icon" />
+    <title>¡Cena de FAMILIA!</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        animation: colorChange 10s infinite alternate;
+      }
+
+      @keyframes colorChange {
+        from {
+          background-color: #fceabb;
+        }
+        to {
+          background-color: #a8c3d8;
+        }
+      }
+
+      #header {
+        background-color: #e8491d;
+        color: white;
+        padding: 20px;
+      }
+
+      #content {
+        margin: 20px;
+      }
+
+      #invitation-card {
+        background: url("img/788681215_235513432_1706x960.webp") center/cover
+          fixed;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: bounce 2s infinite;
+        color: black;
+        font-weight: 1000;
+      }
+
+      #invitation-card ul {
+        list-style-type: none; /* Elimina los puntos de la lista */
+        padding: 0; /* Elimina el relleno predeterminado de la lista */
+        margin: 0; /* Elimina el margen predeterminado de la lista */
+      }
+
+      #invitation-card li {
+        margin-bottom: 10px; /* Añade un margen inferior entre los elementos de la lista */
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+
+      #burger-img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        animation: rotate 5s infinite linear;
+      }
+
+      button {
+        background-color: #e8491d;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #ff6347;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>¡Cena Familiar!</h1>
+    </div>
+
+    <div id="content">
+      <div id="invitation-card">
+        <img id="burger-img" src="img/Brutal58800x290.png" alt="Hamburguesa" />
+
+        <p>Queridos invitados,</p>
+        <p>
+          ¡Prepárense para una noche llena de risas y chismes! Están
+          oficialmente invitados a nuestra cena familiar.
+        </p>
+        <p>Los afortunados comensales serán:</p>
+        <ul>
+          <li>Esposa</li>
+          <li>Valeria</li>
+          <li>Jorge</li>
+          <li>Pollo</li>
+        </ul>
+
+        <p>¡No querrán perderse esta increíble experiencia gastronómica!</p>
+
+        <button onclick="confirmAttendance()">¡Confirmar Asistencia!</button>
+      </div>
+    </div>
+
+    <script>
+      function confirmAttendance() {
+        alert(
+          "¡Gracias por confirmar su asistencia! ¡Nos vemos en Avenida de la Ciudad de Barcelona 130, a las 20:30!"
+        );
+      }
+    </script>
+  </body>
+</html>
